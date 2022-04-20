@@ -1,0 +1,84 @@
+/* app css stylesheet */
+body {
+  background-color: #F3F4F7;
+}
+
+.pad {
+  padding: 12px 0;
+}
+
+.red-text {
+  color: #d9534f !important;
+}
+
+.logo-container {
+  background-color: #d9534f;
+  /*background-color: white;*/
+  -webkit-box-shadow: 0px 1px 8px #D1D1D1;
+     -moz-box-shadow: 0px 1px 8px #D1D1D1;
+          box-shadow: 0px 1px 8px #D1D1D1;
+}
+.logo-container.red-back {
+  background-color: #d9534f;
+
+}
+.logo-container.white-back {
+  background-color: white;
+
+}
+.logo-container .logo {
+  margin: 0px auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.logo.white-logo {
+  background-image: url(/img/party-all-text-logo-white.png?inline=1);
+}
+.logo.red-logo {
+  background-image: url(/img/party-all-text-logo-red.png?inline=1);
+}
+
+@media (max-width: 500px) {
+  .pad {
+    padding: 6px 0;
+  }
+}
+
+.page-fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  opacity: 1;
+}
+.page-fade.ng-enter,
+.page-fade.ng-leave {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.page-fade.ng-enter {
+  opacity: 0;
+}
+.page-fade.ng-enter-active {
+  opacity: 1;
+}
+.page-fade.ng-leave {
+  opacity: 1;
+}
+.page-fade.ng-leave-active {
+  opacity: 0;
+}
+
+.fade-in.ng-enter {
+  -webkit-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+  opacity: 0;
+}
+ 
+.fade-in.ng-enter-active {
+  opacity: 1;
+}
